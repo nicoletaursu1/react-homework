@@ -9,10 +9,10 @@ import {
 class TaskForm extends Component {
   static contextType = TodoContext;
 
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
-      text: "",
+      text: ""
     };
   }
 
