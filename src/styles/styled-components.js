@@ -73,6 +73,10 @@ const TodoListItem = styled.li`
     props.isDone === 1 &&
     css`
       margin-top: 40px;
+      & > *:nth-child(2) {
+        text-decoration: line-through;
+      }
+
       &::before {
         content: "COMPLETE";
         position: absolute;
